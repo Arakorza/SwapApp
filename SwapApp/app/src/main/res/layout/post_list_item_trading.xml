@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:background="#090909"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:id="@+id/mainLayout_PostItemTrading">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/text_view_border_rounded">
+
+        <TextView
+            android:id="@+id/tradingWith_PostItemTrading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:fontFamily="sans-serif"
+            android:text="Trading With"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/userInfoContainer_PostItemTrading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tradingWith_PostItemTrading"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:paddingBottom="2.4dp">
+
+            <ImageView
+                android:id="@+id/pfp_PostItemTrading"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="2.4dp"
+                android:layout_marginTop="7.4dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="94.8dp"
+                android:layout_alignLeft="@id/pfp_PostItemTrading"
+                android:layout_alignTop="@id/pfp_PostItemTrading"
+                android:layout_alignRight="@id/pfp_PostItemTrading"
+                android:layout_alignBottom="@id/pfp_PostItemTrading"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-2.4dp"
+                android:layout_marginTop="-2.4dp"
+                android:layout_marginRight="-2.4dp"
+                android:background="@drawable/text_view_border_rounded" />
+
+            <TextView
+                android:id="@+id/username_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/pfp_PostItemTrading"
+                android:fontFamily="sans-serif"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_PostItemTrading"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/pfp_PostItemTrading"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ratingLinLayout_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_PostItemTrading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/pfp_PostItemTrading"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rating1_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating2_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating3_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating4_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating5_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/numOfRatings_PostItemTrading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="0dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/numOfTrades_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingLinLayout_PostItemTrading"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/pfp_PostItemTrading"
+                android:fontFamily="sans-serif"
+                android:text="# Of Trades"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactInfoContainer_PostItemTrading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfoContainer_PostItemTrading"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/contactInfoTitle_PostItemTrading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Contact Info"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactInfo_PostItemTrading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactInfoTitle_PostItemTrading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bioContainer_PostItemTrading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactInfoContainer_PostItemTrading"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/bioTitle_PostItemTrading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Biography"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bio_PostItemTrading"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bioTitle_PostItemTrading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/time_PostItemTrading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bioContainer_PostItemTrading"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image1_PostItemTrading"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/time_PostItemTrading"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@id/image1_PostItemTrading"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/image1_PostItemTrading"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/title1_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description1_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1_PostItemTrading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_swap_vert_24"
+            android:layout_below="@id/image1_PostItemTrading"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_marginTop="9dp"/>
+
+        <ImageView
+            android:id="@+id/image2_PostItemTrading"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/image1_PostItemTrading"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginRight="6dp" />
+
+        <Button
+            android:id="@+id/chooseBorder_PostItemTrading"
+
+            android:layout_width="93dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/choose_PostItemTrading"
+            android:layout_alignRight="@id/choose_PostItemTrading"
+            android:layout_marginTop="-51dp"
+            android:layout_marginRight="-3dp"
+
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/choose_PostItemTrading"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image1_PostItemTrading"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="3dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="Choose"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <RelativeLayout
+            android:id="@+id/boxOutline2_PostItemTrading"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@id/image2_PostItemTrading"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/image2_PostItemTrading"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/title2_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description2_PostItemTrading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2_PostItemTrading"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/tradeBorder_PostItemTrading"
+
+            android:layout_width="179dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/image2_PostItemTrading"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+
+            android:backgroundTint="@color/accept" />
+
+        <Button
+            android:id="@+id/trade_PostItemTrading"
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/tradeBorder_PostItemTrading"
+            android:layout_alignBottom="@id/tradeBorder_PostItemTrading"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_outline_swap_horizontal_circle_24"
+            android:drawableTint="@color/accept"
+            android:fontFamily="sans-serif"
+            android:text="Trade"
+            android:textAllCaps="false"
+            android:textColor="@color/accept" />
+
+        <Button
+            android:id="@+id/rejectBorder_PostItemTrading"
+
+            android:layout_width="179dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/image2_PostItemTrading"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+
+            android:backgroundTint="@color/decline" />
+
+        <Button
+            android:id="@+id/reject_PostItemTrading"
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rejectBorder_PostItemTrading"
+            android:layout_alignLeft="@id/rejectBorder_PostItemTrading"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="Reject"
+            android:textAllCaps="false"
+            android:textColor="@color/decline"
+            android:drawableLeft="@drawable/ic_outline_cancel_24"
+            android:drawableTint="@color/decline" />
+
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

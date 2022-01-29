@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstInterface.LoginActivity"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="30dp">
+
+        <TextView
+            android:id="@+id/title_LoginTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Swap App"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="70dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <TextView
+            android:id="@+id/instructions_LoginTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_LoginTextView"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Enter your login information below:"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="15dp"
+            android:textStyle="bold">
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/email_LoginTextInputLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instructions_LoginTextView"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeColor="#FFFFFF"
+
+            app:startIconDrawable="@drawable/ic_person"
+            app:startIconTint="@color/white"
+
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_LoginTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textEmailAddress">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/password_LoginTextInputLayout"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/email_LoginTextInputLayout"
+            android:layout_marginTop="5dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidth="3dp"
+            app:boxStrokeColor="#FFFFFF"
+
+            app:startIconDrawable="@drawable/ic_lock"
+            app:startIconTint="@color/white"
+
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/white"
+
+            android:hint="Password"
+            android:textColorHint="@color/white"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_LoginTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:inputType="textPassword">
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/resetPassword_LoginButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_LoginTextInputLayout"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="-0dp"
+            android:backgroundTint="@color/black"
+            android:text="Click to reset password"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/loginBorder_LoginButton"
+
+            android:layout_width="93dp"
+            android:layout_height="53dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/login_LoginButton"
+            android:layout_marginTop="-51dp"
+
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/login_LoginButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/resetPassword_LoginButton"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:fontFamily="sans-serif"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/error_LoginTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_LoginButton"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            android:textStyle="bold"></TextView>
+
+        <Button
+            android:id="@+id/signup_LoginButton"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_below="@id/login_LoginButton"
+            android:layout_marginTop="90dp"
+
+            android:backgroundTint="@color/black"
+            android:text="Don't have an account?"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

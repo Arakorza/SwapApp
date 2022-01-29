@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SecondInterface.Profile.EditProfile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title_EditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="Edit Profile"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="60dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/editPfpContainer_EditProfile"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/title_EditProfile"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/pfp_EditProfile"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/round_corners" />
+
+            <Button
+                android:id="@+id/pfpButton_EditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:background="@android:color/transparent"
+                android:drawableTop="@drawable/ic_baseline_upload_24"
+                android:scaleX="2"
+                android:scaleY="2" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_below="@+id/title_EditProfile"
+            android:layout_alignLeft="@id/editPfpContainer_EditProfile"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/username_EditProfile"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/title_EditProfile"
+                android:layout_alignLeft="@id/editPfpContainer_EditProfile"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="6dp"
+                android:gravity="center"
+                android:hint="Username"
+
+                android:textColorHint="@color/white"
+                app:boxStrokeColor="#FFFFFF"
+                app:boxStrokeWidth="3dp"
+
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+
+                app:counterTextColor="@color/white"
+                app:hintTextColor="@color/white"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:startIconDrawable="@drawable/ic_person"
+                app:startIconTint="@color/white">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/username_EditProfileTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLength="20"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"></com.google.android.material.textfield.TextInputEditText>
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/contactInfo_EditProfile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editPfpContainer_EditProfile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:hint="Contact Information"
+
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:boxStrokeWidth="3dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="150"
+
+            app:counterTextColor="@color/white"
+
+            app:hintTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/contactInfo_EditProfileTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="150"
+                android:maxLines="5"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bio_EditProfile"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/contactInfo_EditProfile"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:gravity="center"
+            android:hint="Biography"
+
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:boxStrokeWidth="3dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="300"
+
+            app:counterTextColor="@color/white"
+
+            app:hintTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/bio_EditProfileTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="300"
+                android:maxLines="10"
+                android:textColor="@color/white"
+                android:textSize="12dp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/saveChangesBorder_EditProfile"
+
+            android:layout_width="175dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/saveChanges_EditProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-51dp"
+
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/saveChanges_EditProfile"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bio_EditProfile"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_save_as_24"
+            android:fontFamily="sans-serif"
+            android:text="Save Changes"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/error_EditProfile"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/saveChanges_EditProfile"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back_EditProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="39dp"
+            android:layout_below="@id/error_EditProfile"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="#AA0000"
+            android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+            android:fontFamily="sans-serif"
+            android:text="Back To Profile"
+            android:textAllCaps="false"
+            android:textSize="11dp" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

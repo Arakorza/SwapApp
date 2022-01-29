@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:background="#090909"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:id="@+id/mainLayout_PostItemPending">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/text_view_border_rounded">
+
+        <TextView
+            android:id="@+id/title_PostItemPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_PostItemPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_PostItemPending"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="sans-serif"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_PostItemPending"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/time_PostItemPending"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp" />
+
+        <TextView
+            android:id="@+id/requestingUser_PostItemPending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/image_PostItemPending"
+            android:fontFamily="sans-serif"
+            android:text="Requesting User"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/userInfoContainer_PostItemPending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/requestingUser_PostItemPending"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:paddingBottom="2.4dp">
+
+            <ImageView
+                android:id="@+id/pfp_PostItemPending"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="2.4dp"
+                android:layout_marginTop="7.4dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="94.8dp"
+                android:layout_alignLeft="@id/pfp_PostItemPending"
+                android:layout_alignTop="@id/pfp_PostItemPending"
+                android:layout_alignRight="@id/pfp_PostItemPending"
+                android:layout_alignBottom="@id/pfp_PostItemPending"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-2.4dp"
+                android:layout_marginTop="-2.4dp"
+                android:layout_marginRight="-2.4dp"
+                android:background="@drawable/text_view_border_rounded" />
+
+            <TextView
+                android:id="@+id/username_PostItemPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/pfp_PostItemPending"
+                android:fontFamily="sans-serif"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email_PostItemPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_PostItemPending"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/pfp_PostItemPending"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ratingLinLayout_PostItemPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_PostItemPending"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/pfp_PostItemPending"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rating1_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating2_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating3_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating4_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating5_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/numOfRatings_PostItemPending"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="0dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/numOfTrades_PostItemPending"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingLinLayout_PostItemPending"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/pfp_PostItemPending"
+                android:fontFamily="sans-serif"
+                android:text="# Of Trades"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/acceptBorder_PostItemPending"
+
+                android:layout_width="93dp"
+                android:layout_height="53dp"
+                android:layout_below="@id/accept_PostItemPending"
+                android:layout_alignRight="@id/accept_PostItemPending"
+                android:layout_marginTop="-51dp"
+                android:layout_marginRight="-3dp"
+
+                android:backgroundTint="@color/accept" />
+
+            <Button
+                android:id="@+id/accept_PostItemPending"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+
+                android:layout_centerInParent="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif"
+                android:text="Accept"
+                android:textAllCaps="false"
+                android:textColor="@color/accept" />
+
+            <Button
+                android:id="@+id/declineBorder_PostItemPending"
+
+                android:layout_width="93dp"
+                android:layout_height="53dp"
+                android:layout_below="@id/decline_PostItemPending"
+                android:layout_alignRight="@id/decline_PostItemPending"
+                android:layout_marginTop="-51dp"
+                android:layout_marginRight="-3dp"
+
+                android:backgroundTint="@color/decline" />
+
+            <Button
+                android:id="@+id/decline_PostItemPending"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/acceptBorder_PostItemPending"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+
+                android:layout_marginTop="-3dp"
+                android:layout_marginRight="3dp"
+                android:backgroundTint="@color/black"
+                android:fontFamily="sans-serif"
+                android:text="Decline"
+                android:textAllCaps="false"
+                android:textColor="@color/decline" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bioContainer_PostItemPending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfoContainer_PostItemPending"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/bioTitle_PostItemPending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Biography"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bio_PostItemPending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bioTitle_PostItemPending"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

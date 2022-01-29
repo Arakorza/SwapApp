@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".SecondInterface.MainMenuActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_CreatePostTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Create Post"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_CreatePostImageView"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_below="@+id/title_CreatePostTextView"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/round_corners" />
+
+        <Button
+            android:id="@+id/uploadButton_CreatePostButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image_CreatePostImageView"
+            android:layout_alignRight="@+id/image_CreatePostImageView"
+            android:layout_marginTop="-55dp"
+            android:background="@android:color/transparent"
+            android:drawableTop="@drawable/ic_baseline_upload_24"
+            android:scaleX="1.5"
+            android:scaleY="1.5" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/title_CreatePostTextInputLayout"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/uploadButton_CreatePostButton"
+            android:layout_marginTop="0dp"
+            android:hint="Title"
+
+            android:inputType="text|textMultiLine"
+
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:boxStrokeWidth="3dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="30"
+
+            app:counterTextColor="@color/white"
+
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+
+            app:hintTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/title_CreatePostTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:maxLength="30"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/description_CreatePostTextInputLayout"
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_CreatePostTextInputLayout"
+            android:layout_marginTop="5dp"
+            android:hint="Description"
+
+            android:textColorHint="@color/white"
+            app:boxStrokeColor="#FFFFFF"
+            app:boxStrokeWidth="3dp"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="150"
+
+            app:counterTextColor="@color/white"
+
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/white"
+            app:hintTextColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/description_CreatePostTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="5"
+                android:textColor="@color/white"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/postBorder_CreatePost"
+
+            android:layout_width="103dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/post_CreatePost"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="-51dp"
+
+            android:backgroundTint="@color/white" />
+
+        <Button
+            android:id="@+id/post_CreatePost"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/description_CreatePostTextInputLayout"
+
+            android:layout_centerInParent="true"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_outbox_24"
+            android:fontFamily="sans-serif"
+            android:text="Post"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/error_CreatePostTextView"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/post_CreatePost"
+            android:layout_marginTop="15dp"
+
+            android:fontFamily="sans-serif"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#FF0000"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

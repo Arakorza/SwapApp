@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:background="#090909"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:id="@+id/mainLayout_PostItemSearch">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/text_view_border_rounded">
+
+        <TextView
+            android:id="@+id/title_PostItemSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:text="Title"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_PostItemSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_PostItemSearch"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-3dp"
+            android:fontFamily="sans-serif"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/image_PostItemSearch"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/time_PostItemSearch" />
+
+        <RelativeLayout
+            android:id="@+id/descriptionContainer_PostItemSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_PostItemSearch"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/descriptionTitle_PostItemSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description_PostItemSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionTitle_PostItemSearch"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionContainer_PostItemSearch"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:paddingBottom="2.4dp">
+
+            <ImageView
+                android:id="@+id/pfp_PostItemSearch"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="2.4dp"
+                android:layout_marginTop="7.4dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="94.8dp"
+                android:layout_alignLeft="@id/pfp_PostItemSearch"
+                android:layout_alignTop="@id/pfp_PostItemSearch"
+                android:layout_alignRight="@id/pfp_PostItemSearch"
+                android:layout_alignBottom="@id/pfp_PostItemSearch"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-2.4dp"
+                android:layout_marginTop="-2.4dp"
+                android:layout_marginRight="-2.4dp"
+                android:background="@drawable/text_view_border_rounded" />
+
+            <TextView
+                android:id="@+id/username_PostItemSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/pfp_PostItemSearch"
+                android:fontFamily="sans-serif"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email_PostItemSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_PostItemSearch"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/pfp_PostItemSearch"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ratingLinLayout_PostItemSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_PostItemSearch"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/pfp_PostItemSearch"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rating1_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating2_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating3_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating4_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating5_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/numOfRatings_PostItemSearch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="0dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/numOfTrades_PostItemSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingLinLayout_PostItemSearch"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/pfp_PostItemSearch"
+                android:fontFamily="sans-serif"
+                android:text="# Of Trades"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/wishlistedIcon_PostItemSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/ic_baseline_heart_24" />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

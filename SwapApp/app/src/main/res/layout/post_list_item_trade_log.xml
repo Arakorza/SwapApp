@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="590dp"
+    android:background="#090909"
+    android:paddingBottom="6dp"
+    android:paddingTop="6dp"
+    android:id="@+id/mainLayout_PostItemTradeLog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:background="@drawable/text_view_border_rounded">
+
+        <TextView
+            android:id="@+id/time_PostItemTradeLog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:fontFamily="sans-serif"
+            android:text="Time"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/userInfoContainer_PostItemTradeLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/time_PostItemTradeLog"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="6dp"
+            android:gravity="center"
+            android:paddingBottom="2.4dp">
+
+            <ImageView
+                android:id="@+id/pfp_PostItemTradeLog"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="2.4dp"
+                android:layout_marginTop="7.4dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="94.8dp"
+                android:layout_alignLeft="@id/pfp_PostItemTradeLog"
+                android:layout_alignTop="@id/pfp_PostItemTradeLog"
+                android:layout_alignRight="@id/pfp_PostItemTradeLog"
+                android:layout_alignBottom="@id/pfp_PostItemTradeLog"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="-2.4dp"
+                android:layout_marginTop="-2.4dp"
+                android:layout_marginRight="-2.4dp"
+                android:background="@drawable/text_view_border_rounded" />
+
+            <TextView
+                android:id="@+id/username_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/pfp_PostItemTradeLog"
+                android:fontFamily="sans-serif"
+                android:text="Username"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username_PostItemTradeLog"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/pfp_PostItemTradeLog"
+                android:fontFamily="sans-serif"
+                android:text="Email"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/ratingLinLayout_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/email_PostItemTradeLog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/pfp_PostItemTradeLog"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/rating1_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating2_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating3_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating4_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <ImageView
+                    android:id="@+id/rating5_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="-3dp"
+                    android:paddingRight="-3dp"
+                    android:scaleX="0.7"
+                    android:scaleY="0.7"
+                    android:src="@drawable/ic_baseline_star_24" />
+
+                <TextView
+                    android:id="@+id/numOfRatings_PostItemTradeLog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="0dp"
+                    android:text="0"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/numOfTrades_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ratingLinLayout_PostItemTradeLog"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@id/pfp_PostItemTradeLog"
+                android:fontFamily="sans-serif"
+                android:text="# Of Trades"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactInfoContainer_PostItemTradeLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userInfoContainer_PostItemTradeLog"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/contactInfoTitle_PostItemTradeLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Contact Info"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/contactInfo_PostItemTradeLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/contactInfoTitle_PostItemTradeLog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bioContainer_PostItemTradeLog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contactInfoContainer_PostItemTradeLog"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/bioTitle_PostItemTradeLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="0dp"
+                android:fontFamily="sans-serif"
+                android:text="Biography"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/bio_PostItemTradeLog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bioTitle_PostItemTradeLog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="3dp"
+                android:fontFamily="sans-serif"
+                android:maxLines="6"
+                android:text=""
+                android:textAlignment="viewStart"
+                android:textColor="@color/white"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/image1_PostItemTradeLog"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/bioContainer_PostItemTradeLog"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginRight="6dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@id/image1_PostItemTradeLog"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/image1_PostItemTradeLog"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/title1_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description1_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title1_PostItemTradeLog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_baseline_swap_vert_24"
+            android:layout_below="@id/image1_PostItemTradeLog"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:layout_marginTop="9dp"/>
+
+        <ImageView
+            android:id="@+id/image2_PostItemTradeLog"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@id/image1_PostItemTradeLog"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginRight="6dp" />
+
+        <RelativeLayout
+            android:id="@+id/boxOutline2_PostItemTradeLog"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignBottom="@id/image2_PostItemTradeLog"
+            android:layout_marginRight="6dp"
+            android:layout_toRightOf="@id/image2_PostItemTradeLog"
+            android:background="@drawable/text_view_border_rounded">
+
+            <TextView
+                android:id="@+id/title2_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif"
+                android:text="Title"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description2_PostItemTradeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title2_PostItemTradeLog"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:fontFamily="sans-serif"
+                android:text="Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/rateBorder_PostItemTradeLog"
+
+            android:layout_width="179dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/boxOutline2_PostItemTradeLog"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="6dp"
+            android:layout_centerHorizontal="true"
+
+            android:backgroundTint="#CCCC00" />
+
+        <Button
+            android:id="@+id/rate_PostItemTradeLog"
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rateBorder_PostItemTradeLog"
+            android:layout_alignBottom="@id/rateBorder_PostItemTradeLog"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_outline_rate_review_24"
+            android:drawableTint="#CCCC00"
+            android:fontFamily="sans-serif"
+            android:text="Rate User"
+            android:textAllCaps="false"
+            android:textColor="#CCCC00" />
+
+    </RelativeLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

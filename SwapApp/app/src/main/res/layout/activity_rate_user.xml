@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondInterface.RateUser"
+    android:background="#090909">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/text_view_border_rounded">
+
+        <TextView
+            android:id="@+id/username_PostItemRateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="32dp"
+            android:fontFamily="sans-serif"
+            android:text="Username"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/email_PostItemRateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/username_PostItemRateUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-6dp"
+            android:fontFamily="sans-serif"
+            android:text="Email"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/pfp_PostItemRateUser"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:layout_below="@id/email_PostItemRateUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/pfp_PostItemRateUser"
+            android:layout_alignTop="@id/pfp_PostItemRateUser"
+            android:layout_alignRight="@id/pfp_PostItemRateUser"
+            android:layout_alignBottom="@id/pfp_PostItemRateUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="-2.4dp"
+            android:layout_marginTop="-2.4dp"
+            android:layout_marginRight="-2.4dp"
+            android:background="@drawable/text_view_border_rounded" />
+
+        <RatingBar
+            android:id="@+id/ratingBar_PostItemRateUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pfp_PostItemRateUser"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:numStars="5"
+            android:progressBackgroundTint="#333333"
+            android:progressTint="@color/white"
+            android:stepSize="0.5" />
+
+        <Button
+            android:id="@+id/rateBorder_PostItemRateUser"
+
+            android:layout_width="179dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/ratingBar_PostItemRateUser"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="6dp"
+            android:layout_centerHorizontal="true"
+
+            android:backgroundTint="#CCCC00" />
+
+        <Button
+            android:id="@+id/rate_PostItemRateUser"
+
+            android:layout_width="174dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/rateBorder_PostItemRateUser"
+            android:layout_alignBottom="@id/rateBorder_PostItemRateUser"
+            android:layout_marginLeft="2.5dp"
+            android:layout_marginBottom="2.5dp"
+            android:backgroundTint="@color/black"
+            android:drawableLeft="@drawable/ic_outline_rate_review_24"
+            android:drawableTint="#CCCC00"
+            android:fontFamily="sans-serif"
+            android:text="Rate User"
+            android:textAllCaps="false"
+            android:textColor="#CCCC00" />
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
